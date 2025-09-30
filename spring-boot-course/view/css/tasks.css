@@ -1,0 +1,141 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #122c6e 0%, #274690 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.container-tasks {
+    background: rgba(255,255,255,0.08);
+    border-radius: 32px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(8px);
+    padding: 2.5rem 3rem;
+    max-width: 800px;
+    width: 100%;
+
+    /* centralização absoluta */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: #00ccff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 16px #0008, 0 1px 0 #13b0b6;
+}
+
+.table-tasks {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(255,255,255,0.18);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.table-tasks th, .table-tasks td {
+    padding: 1rem;
+    text-align: left;
+    color: #f8fafc;
+    font-size: 1.1rem;
+}
+
+.table-tasks th {
+    background: linear-gradient(90deg, #274690 0%, #122c6e 100%);
+    color: #00ccff;
+    font-weight: 700;
+    border-bottom: 2px solid #274690;
+}
+
+.table-tasks tr {
+    transition: background 0.2s;
+}
+
+.table-tasks tr:hover {
+    background: rgba(39,70,144,0.18);
+}
+
+@media (max-width: 600px) {
+    .container-tasks {
+        padding: 1rem;
+    }
+    .table-tasks th, .table-tasks td {
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+}
+
+.signout {
+    margin-top: 1.5rem;  /* Espaço entre o container e o botão */
+    text-align: center;
+    width: 100%;
+}
+
+/* Estilos para o formulário de adicionar tarefa */
+.add-task-form {
+    background: rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.add-task-form .form-control {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(0,204,255,0.3);
+    color: #f8fafc;
+    border-radius: 12px 0 0 12px;
+}
+
+.add-task-form .form-control::placeholder {
+    color: rgba(248,250,252,0.7);
+}
+
+.add-task-form .form-control:focus {
+    background: rgba(255,255,255,0.2);
+    border-color: #00ccff;
+    box-shadow: 0 0 0 0.2rem rgba(0,204,255,0.25);
+    color: #f8fafc;
+}
+
+.add-task-form .btn-primary {
+    background: linear-gradient(90deg, #00ccff 0%, #274690 100%);
+    border: none;
+    border-radius: 0 12px 12px 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.add-task-form .btn-primary:hover {
+    background: linear-gradient(90deg, #274690 0%, #122c6e 100%);
+    transform: translateY(-1px);
+}
+
+.add-task-form .btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Estilos para as mensagens de resposta */
+#taskResponse {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    min-height: 20px;
+}
+
+.table-tasks .text-muted {
+    color: rgba(248,250,252,0.6) !important;
+    font-style: italic;
+    padding: 2rem 1rem;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ToDoSimple</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+
+    
+        <div class="container" >
+            <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-5">
+                        <div class="card shadow-lg border-0 p-0" style="background: rgba(0, 64, 255, 0.85); backdrop-filter: blur(12px); border-radius: 32px; overflow: hidden;">
+                            <div class="card-body p-5 text-center position-relative">
+                                <div class="mb-4">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Avatar" style="width:90px; height:90px; border-radius:50%; box-shadow:0 2px 16px #0003; background:#fff; border:4px solid #274690;">
+                                </div>
+                                <h2 class="fw-bold mb-2" style="font-size:2.6rem; font-family:'Segoe UI', 'Roboto', Arial, sans-serif; color:#00ccff; letter-spacing:2px; text-shadow:0 2px 16px #0008, 0 1px 0 #13b0b6; background:none; background-clip:initial; -webkit-background-clip:initial; -webkit-text-fill-color:initial;">ToDo Simple</h2>
+                                <p class="mb-4 text-white">Access your account to manage your tasks.</p>
+                                <form class="mb-3 mt-md-4">
+                                    <div class="mb-3 text-start">
+                                        <label for="username" class="form-label text-light">Username</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-transparent text-light">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm4-3a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/><path d="M14 14s-1-1.5-6-1.5S2 14 2 14V15h12v-1z"/></svg>
+                                            </span>
+                                            <input type="text" class="form-control form-control-lg bg-white text-dark border-0" id="username" required placeholder="Enter your username">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 text-start">
+                                        <label for="password" class="form-label text-light">Password</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-transparent text-light">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a4 4 0 0 0-4 4v3a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2V5a4 4 0 0 0-4-4zm-3 4a3 3 0 0 1 6 0v3H5V5zm-2 5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-4z"/></svg>
+                                            </span>
+                                            <input type="password" class="form-control form-control-lg bg-white text-dark border-0" id="password" required placeholder="Enter your password">
+                                        </div>
+                                    </div>
+                                    <div class="d-grid gap-2 mt-4">
+                                        <button class="btn btn-main btn-lg" onclick="login()" type="button">Login</button>
+                                    </div>
+
+                                    <div>
+                                        <p class="mb-3 mt-3 text-center text-white" id="response"></p>
+                                    </div>
+                                </form>
+                                <div class="mt-4">
+                                    <p class="mb-0 text-center text-light-50">Don't have an account?
+                                        <a href="signup.html" class="text-info fw-bold">Sign up</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+
+</body>
+</html>

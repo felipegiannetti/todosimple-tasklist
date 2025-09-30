@@ -1,0 +1,42 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0080ff 0%, #f3f3f3 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-control-lg {
+    border-radius: 14px;
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    background: #122c6e;
+    color: #000000;
+    border: 1px solid #274690;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.10);
+}
+
+.form-control-lg:focus {
+    border-color: #f8fafc;
+    box-shadow: 0 0 0 2px #27469099;
+}
+
+/* Botão padrão para login e signup */
+.btn-main {
+    border-radius: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: linear-gradient(90deg, #274690 0%, #122c6e 100%);
+    color: #ffffff;
+    border: none;
+    transition: background 0.3s, box-shadow 0.3s;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-main:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.9);
+    color: #fff !important;
+}
